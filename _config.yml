@@ -4,8 +4,9 @@ author: "scripthropus"
 email: "script2097152@gmail.com"
 
 # GitHub Pages 設定
-baseurl: "/blog"  # リポジトリ名に変更
-url: "https://scripthropus.github.io"  # あなたのGitHubユーザー名に変更
+baseurl: "/blog"  # リポジトリ名
+url: "https://scripthropus.github.io"  # GitHubユーザー名
+domain: scripthropus.github.io  # HTTPS強制用
 
 # Jekyll 設定
 markdown: kramdown
@@ -15,26 +16,25 @@ timezone: Asia/Tokyo
 
 # テーマ
 theme: minima
-# または remote_theme: "mmistakes/minimal-mistakes"
 
-# プラグイン
+# プラグイン (GitHub Pagesでサポートされているもののみ)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-archives
+  # - jekyll-archives  # GitHub Pagesではサポートされていないためコメントアウト
 
-# アーカイブページ生成
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+# アーカイブページ生成 (カスタム実装が必要)
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: category
+#     tag: tag
+#   permalinks:
+#     category: '/category/:name/'
+#     tag: '/tag/:name/'
 
 # デフォルト設定
 defaults:
