@@ -1,0 +1,59 @@
+title: "記録"
+description: "将棋・Chess・競技プログラミング・CS・プログラミングの記録"
+author: "scripthropus"
+email: "script2097152@gmail.com"
+
+# GitHub Pages 設定
+baseurl: "/blog"  # リポジトリ名に変更
+url: "https://scripthropus.github.io"  # あなたのGitHubユーザー名に変更
+
+# Jekyll 設定
+markdown: kramdown
+highlighter: rouge
+encoding: utf-8
+timezone: Asia/Tokyo
+
+# テーマ
+theme: minima
+# または remote_theme: "mmistakes/minimal-mistakes"
+
+# プラグイン
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# アーカイブページ生成
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+# デフォルト設定
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "scripthropus"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# メニュー設定
+header_pages:
+  - about.md
+  - categories.md
+
+# Google Analytics (必要に応じて)
+# google_analytics: UA-NNNNNNNN-N

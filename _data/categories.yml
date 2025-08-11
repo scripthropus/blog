@@ -1,0 +1,24 @@
+shogi:
+  name: "将棋"
+  description: "将棋の対局分析、戦法研究、定跡学習の記録"
+  icon: "🏯"
+
+chess:
+  name: "Chess"
+  description: "チェスのゲーム分析、オープニング理論、エンドゲーム学習"
+  icon: "♔"
+
+competitive-programming:
+  name: "競技プログラミング"
+  description: "AtCoder、Codeforcesなどのコンテスト参加記録"
+  icon: "🏆"
+
+computer-science:
+  name: "コンピュータサイエンス"
+  description: "アルゴリズム、データ構造、理論の学習記録"
+  icon: "🧠"
+
+programming:
+  name: "プログラミング"
+  description: "新技術学習、プロジェクト開発、実装の記録"
+  icon: "💻"
